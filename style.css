@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    background: linear-gradient(135deg, rgb(158, 20, 200), rgb(47, 18, 128));
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 40px 40px 30%;
+    color: #fff;
+}
+.header div{
+    font-size: 30px;
+}
+
+.overall{
+    background: rgba(248, 248, 248, 0.164);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 60px;
+    min-width: 100px;
+    max-width:500px;
+    padding: 50px 15px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(198, 194, 199);
+    border-radius: 30px;
+}
+.main input{
+    padding: 10px 10px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 0;
+    flex: 1;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.main button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgb(111, 33, 156);
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    border: 0;
+    outline: none;
+}
+.main button:hover{
+    background: rgba(111, 33, 156, 0.596);
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid rgba(185, 148, 184, 0.384);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(assets/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 10px;
+    cursor: pointer;
+}
+ul li.checked{
+    color: #fff;
+    text-decoration: none;
+}
+ul li.checked::before{
+    background-image: url(assets/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+ul li span:hover{
+    background: rgba(158, 99, 158, 0.205);
+    border-radius: 50%;
+}
+@media screen and (max-width:900px) {
+    .container{
+        padding: 40px 40px 40px 25%;
+    }
+}
+@media screen and (max-width:700px) {
+    .container{
+        padding: 40px 40px 40px 15%;
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+        padding: 40px 40px 40px 10%;
+    }
+}
